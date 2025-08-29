@@ -1,18 +1,16 @@
-# Salesforce DX Project: Next Steps
+# Opportunity Playbook Feature
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## Overview
+Automates task creation for Opportunities based on stage, ensuring sales reps follow standard processes. Tasks are tracked directly from the Opportunity record.
 
-## How Do You Plan to Deploy Your Changes?
+## Components
+- **Custom Metadata (`Opportunity_Playbook_Template__mdt`)** – Stores task templates for each stage (Task Name, Description, Assignee).  
+- **Custom Object (`Opportunity_Playbook_Item__c`)** – Stores tasks linked to Opportunities with a **Completed** checkbox.  
+- **Apex Trigger (`OpportunityPlaybookTrigger`)** – Runs after Opportunity stage changes to create tasks from templates.  
+- **Lightning Web Component (LWC)** – Displays tasks and allows marking them as completed or re-running the playbook.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
-
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+## How It Works
+1. Opportunity stage changes.  
+2. Trigger queries matching templates for the new stage.  
+3. Tasks are created and linked to the Opportunity.  
+4. Users track progress via LWC.
