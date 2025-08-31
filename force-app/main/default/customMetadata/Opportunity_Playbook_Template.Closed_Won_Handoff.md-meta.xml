@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Closed Won – Handoff</label>
+    <protected>false</protected>
+    <values>
+        <field>Stage__c</field>
+        <value xsi:type="xsd:string">Closed Won</value>
+    </values>
+    <values>
+        <field>Task_Assignee__c</field>
+        <value xsi:type="xsd:string">Customer Success</value>
+    </values>
+    <values>
+        <field>Task_Description__c</field>
+        <value xsi:type="xsd:string">Transfer account details and next steps to CS team.</value>
+    </values>
+    <values>
+        <field>Task_Name__c</field>
+        <value xsi:type="xsd:string">Handoff to Customer Success</value>
+    </values>
+</CustomMetadata>

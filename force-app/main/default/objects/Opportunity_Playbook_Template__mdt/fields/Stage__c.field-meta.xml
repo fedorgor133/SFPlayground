@@ -20,14 +20,34 @@
                 <label>Qualification</label>
             </value>
             <value>
-                <fullName>Proposal</fullName>
+                <fullName>Needs Analysis</fullName>
                 <default>false</default>
-                <label>Proposal</label>
+                <label>Needs Analysis</label>
             </value>
             <value>
-                <fullName>Negotiation</fullName>
+                <fullName>Value Proposition</fullName>
                 <default>false</default>
-                <label>Negotiation</label>
+                <label>Value Proposition</label>
+            </value>
+            <value>
+                <fullName>Id. Decision Makers</fullName>
+                <default>false</default>
+                <label>Id. Decision Makers</label>
+            </value>
+            <value>
+                <fullName>Perception Analysis</fullName>
+                <default>false</default>
+                <label>Perception Analysis</label>
+            </value>
+            <value>
+                <fullName>Proposal/Price Quote</fullName>
+                <default>false</default>
+                <label>Proposal/Price Quote</label>
+            </value>
+            <value>
+                <fullName>Negotiation/Review</fullName>
+                <default>false</default>
+                <label>Negotiation/Review</label>
             </value>
             <value>
                 <fullName>Closed Won</fullName>
