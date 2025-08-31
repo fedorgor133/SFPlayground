@@ -59,6 +59,42 @@
                 <default>false</default>
                 <label>Closed Lost</label>
             </value>
+            <value>
+                <fullName>Id. Decision Makers</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Id. Decision Makers</label>
+            </value>
+            <value>
+                <fullName>Needs Analysis</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Needs Analysis</label>
+            </value>
+            <value>
+                <fullName>Negotiation/Review</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Negotiation/Review</label>
+            </value>
+            <value>
+                <fullName>Perception Analysis</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Perception Analysis</label>
+            </value>
+            <value>
+                <fullName>Proposal/Price Quote</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Proposal/Price Quote</label>
+            </value>
+            <value>
+                <fullName>Value Proposition</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Value Proposition</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

@@ -15,6 +15,10 @@
         <value xsi:type="xsd:string">Send draft proposal to customer</value>
     </values>
     <values>
+        <field>Task_Description__c</field>
+        <value xsi:type="xsd:string">Send draft proposal to customer</value>
+    </values>
+    <values>
         <field>Task_Name__c</field>
         <value xsi:type="xsd:string">Send Proposal</value>
     </values>
