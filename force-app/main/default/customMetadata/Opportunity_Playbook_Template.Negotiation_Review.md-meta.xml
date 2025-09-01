@@ -11,6 +11,10 @@
         <value xsi:type="xsd:string">Sales Manager</value>
     </values>
     <values>
+        <field>Task_Desciption__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
         <field>Task_Description__c</field>
         <value xsi:type="xsd:string">Negotiate contract terms with the client.</value>
     </values>

@@ -11,6 +11,10 @@
         <value xsi:type="xsd:string">BDR Team</value>
     </values>
     <values>
+        <field>Task_Desciption__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
         <field>Task_Description__c</field>
         <value xsi:type="xsd:string">Reach out to the prospect with an intro email and set up a discovery call.</value>
     </values>

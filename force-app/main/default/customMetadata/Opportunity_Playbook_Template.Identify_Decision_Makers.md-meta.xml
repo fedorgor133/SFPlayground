@@ -11,6 +11,10 @@
         <value xsi:type="xsd:string">Sales Rep</value>
     </values>
     <values>
+        <field>Task_Desciption__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
         <field>Task_Description__c</field>
         <value xsi:type="xsd:string">Identify stakeholders and decision-making process.</value>
     </values>

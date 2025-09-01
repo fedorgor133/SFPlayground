@@ -14,3 +14,31 @@ The **AddRelatedRecord** trigger runs **after insert and after update** on Accou
 
 ## 📌 Contact Notification Trigger  
 The **ContactNotificationTrigger** runs **after insert and after delete** on Contact. On insert, it counts the new records and uses the **CustomContactNotification** utility class to notify the current user, supporting real-time awareness of Contact activity.  
+
+## 📌 Opportunity Reminder Batch
+The **OpportunityReminderBatch** class runs on Opportunities and creates **Tasks** for those:  
+
+- Closing soon (`Days_Before_Close__c`)  
+- Not updated recently (`Days_Since_Update__c`)  
+
+**Scheduler:** Can be scheduled via a `Schedulable` class to run automatically at set intervals.
+
+```apex
+public class OpportunityReminderScheduler implements Schedulable {
+    public void execute(SchedulableContext sc) {
+        Database.executeBatch(new OpportunityReminderBatch(), 100);
+    }
+}
+
+```
+
+## 📌 Add Primary Contact (Queueable Apex)
+The AddPrimaryContact class inserts a Contact for multiple Accounts in a specific state:
+
+Accepts a Contact and state abbreviation.
+
+Queries up to 200 Accounts and clones the Contact for each.
+
+Inserts cloned Contacts linked to the corresponding Account.
+
+This ensures consistent primary Contacts without blocking processes.

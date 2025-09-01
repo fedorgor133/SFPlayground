@@ -4,7 +4,7 @@
     <protected>false</protected>
     <values>
         <field>Stage__c</field>
-        <value xsi:type="xsd:string">Negotiation</value>
+        <value xsi:type="xsd:string">Negotiation/Review</value>
     </values>
     <values>
         <field>Task_Assignee__c</field>
